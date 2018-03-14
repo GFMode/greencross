@@ -38,19 +38,14 @@ ext {
 
   // App dependencies
   androidSupportVersion = '27.1.0'
-  leakcanaryVersion = '1.5'
   rxVersion = '1.2.1'
   okHttpVersion = '3.9.0'
   retrofitVersion = '2.1.0'
   daggerVersion = '2.10'
   rxBindingVersion = '0.4.0'
-  googleAutoVersion = '1.0-beta4'
   guavaVersion = '20.0'
-  jwtVersion = '0.7.0'
   butterknifeVersion = '8.8.1'
   glideVersion = '3.7.0'
-  datePickerVersion = '3.4.1'
-  jodaVersion = '2.9.4'
   apacheCommonsVersion = '3.5'
   apacheValidatorVersion = '1.5.1'
 }
