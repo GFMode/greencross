@@ -1,27 +1,51 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    ext.kotlin_version = '1.2.30'
-    repositories {
-        google()
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+  ext.kotlin_version = '1.2.30'
+  repositories {
+    google()
+    jcenter()
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:3.0.1'
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
-    }
+    // NOTE: Do not place your application dependencies here; they belong
+    // in the individual module build.gradle files
+  }
 }
 
 allprojects {
-    repositories {
-        google()
-        jcenter()
-    }
+  repositories {
+    google()
+    jcenter()
+  }
 }
 
 task clean(type: Delete) {
-    delete rootProject.buildDir
+  delete rootProject.buildDir
+}
+
+// Define versions in a single place
+ext {
+
+  // SDK
+  compileSdkVersion = 27
+  buildToolsVersion = "27.0.2"
+
+  //ktx Kotlin Extension
+  ktxVersion = 0.2
+
+  // App dependencies
+  androidSupportVersion = '27.1.0'
+  rxVersion = '1.2.1'
+  okHttpVersion = '3.9.0'
+  retrofitVersion = '2.1.0'
+  daggerVersion = '2.10'
+  rxBindingVersion = '0.4.0'
+  guavaVersion = '20.0'
+  butterknifeVersion = '8.8.1'
+  glideVersion = '3.7.0'
+  apacheCommonsVersion = '3.5'
+  apacheValidatorVersion = '1.5.1'
 }
